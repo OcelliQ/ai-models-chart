@@ -1,0 +1,14 @@
+{
+  "canonical_id": "minimax/minimax-m3",
+  "status": "estimated",
+  "total_params_b": 427,
+  "weights_gib": 198.8,
+  "required_memory_gib": 279,
+  "quantization": "~4-bit weights (ideal packed payload; mixed formats/checkpoint evidence where noted)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/MiniMaxAI/MiniMax-M3"
+  ],
+  "notes": "Official card says about 427B total; use four-bit estimate. Weights_gib is the ideal unpruned 4-bit payload computed as total parameters × 0.5 bytes ÷ 2^30. Required memory adds 12% weight-format/scales/allocation overhead plus 56 GiB for one 108K session KV, runtime and OS. This is an engineering estimate, not a demonstrated minimum deployment.",
+  "checked_on": "2026-10-02"
+}

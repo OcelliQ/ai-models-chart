@@ -1,0 +1,14 @@
+{
+  "canonical_id": "mistralai/mistral-small-2603",
+  "status": "estimated",
+  "total_params_b": 119.0,
+  "weights_gib": 65.9,
+  "required_memory_gib": 91.9,
+  "quantization": "NVFP4 official full checkpoint",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603"
+  ],
+  "notes": "Canonical ID maps to Mistral Small 4 119B A6B, 119B total / 6.5B active. Official NVFP4 checkpoint tree reports 70.8 GB (65.9 GiB converted); adds 26 GiB approximate 108K cache/runtime/OS. Full MoE experts count toward residency; NVFP4 stored weights qualify. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02"
+}

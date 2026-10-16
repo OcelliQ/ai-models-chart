@@ -1,0 +1,15 @@
+{
+  "canonical_id": "deepseek/deepseek-v4.1-flash",
+  "status": "estimated",
+  "total_params_b": 748,
+  "weights_gib": 476.0,
+  "required_memory_gib": 540,
+  "quantization": "~4-bit weights (ideal packed payload; mixed formats/checkpoint evidence where noted)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks"
+  ],
+  "notes": "552B backbone + 196B Engram = 748B. Published complete checkpoint is 476 GiB. A first-hand 3-Spark serving recipe moves 189 GiB Engram tables to NVMe, so that demonstration fails the all-resident rule. Required memory is estimated as full 476 GiB checkpoint + 64 GiB for 108K-session KV, runtime and OS = 540 GiB; no qualifying deployment was verified.",
+  "checked_on": "2026-10-02"
+}

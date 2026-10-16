@@ -1,0 +1,185 @@
+canonical_id,display_name,aaii,open_weights,country,notes
+xiaomi/mimo-v2.5,MiMo-V2.5,25,true,China,
+deepseek/deepseek-v4-flash,DeepSeek V4 Flash 0423,24,true,China,AAII from AA's closest matching 0420 snapshot page; exact 0423 build no longer listed separately (superseded by 0731)
+deepseek/deepseek-v4-flash-0731,DeepSeek V4 Flash 0731,34.3,true,China,"AAII 34.3 is DeepSeek V4 Flash 0731 (Reasoning, Max Effort) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug deepseek/deepseek-v4-flash-20260731."
+openai/gpt-5.6-luna,GPT-5.6 Luna,37,false,USA,Max-effort score
+tencent/hy3,Hy3,25,true,China,
+deepseek/deepseek-v4.1-flash,DeepSeek V4.1 Flash,39.5,true,China,"AAII 39.5 is DeepSeek V4.1 Flash (Reasoning, Max Effort) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug deepseek/deepseek-v4.1-flash-20260910."
+z-ai/glm-5.3-flash,GLM 5.3 Flash,42,true,China,
+tencent/hy4-preview,Hy4 Preview,,true,China,AAII not published; only Hy3/Hy3-preview listed on artificialanalysis.ai
+minimax/minimax-m3,MiniMax M3,29,true,China,
+nvidia/nemotron-3-ultra-550b-a55b,Nemotron 3 Ultra,23,true,USA,
+z-ai/glm-5.2,GLM 5.2,34,true,China,
+deepseek/deepseek-v4-pro,DeepSeek V4 Pro 0423,30,true,China,AAII from AA's closest matching 0424 snapshot page; exact 0423 build no longer listed separately (superseded by 0813)
+anthropic/claude-sonnet-4.6,Claude Sonnet 4.6,30,false,USA,Adaptive reasoning max-effort score
+google/gemini-3-flash-preview,Gemini 3 Flash Preview,26,false,USA,Reasoning-mode score; non-reasoning mode scores 28
+tencent/hy3-preview,Hy3 Preview,23,true,China,
+deepseek/deepseek-v3.2,DeepSeek V3.2,21,true,China,Reasoning-mode score
+anthropic/claude-opus-4.7,Claude Opus 4.7,41,false,USA,Adaptive reasoning max-effort score
+google/gemini-2.5-flash-lite,Gemini 2.5 Flash Lite,9,false,USA,Reasoning-mode score; non-reasoning mode scores 7
+google/gemini-2.5-flash,Gemini 2.5 Flash,13,false,USA,Reasoning-mode score; non-reasoning mode scores 10
+openai/gpt-oss-120b,gpt-oss-120b,12,true,USA,High reasoning-effort variant score
+anthropic/claude-opus-4.8,Claude Opus 4.8,42,false,USA,Adaptive reasoning max-effort score
+moonshotai/kimi-k3,Kimi K3,44,true,China,
+xiaomi/mimo-v2.6-flash,MiMo-V2.6-Flash,37.9,true,China,"AAII 37.9 is MiMo-V2.6-Flash from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug xiaomi/mimo-v2.6-flash-20260921."
+minimax/minimax-m2.5,MiniMax M2.5,23,true,China,
+z-ai/glm-5.3,GLM 5.3,45,true,China,AA score is for max reasoning effort
+anthropic/claude-sonnet-5,Claude Sonnet 5,38,false,USA,
+anthropic/claude-opus-4.6,Claude Opus 4.6,32,false,USA,Adaptive reasoning max-effort score
+stepfun/step-3.7-flash,Step 3.7 Flash,19,true,China,
+openai/gpt-5.6-sol,GPT-5.6 Sol,47,false,USA,AAII is for the (max) variant on artificialanalysis.ai
+anthropic/claude-opus-5,Claude Opus 5,51,false,USA,
+poolside/laguna-s-2.1,Laguna S 2.1,,true,USA,AAII not published on artificialanalysis.ai as of search date; Poolside HQ San Francisco
+nvidia/nemotron-3-super-120b-a12b,Nemotron 3 Super,13,true,USA,
+minimax/minimax-m2.7,MiniMax M2.7,23,true,China,
+stepfun/step-3.5-flash,Step 3.5 Flash,17,true,China,
+moonshotai/kimi-k2.5-0127,Kimi K2.5,23,true,China,
+moonshotai/kimi-k2.6,Kimi K2.6,27,true,China,
+google/gemini-3.7-flash,Gemini 3.7 Flash,39,false,USA,AAII is for the (high) variant on artificialanalysis.ai
+google/gemini-3.8-flash,Gemini 3.8 Flash,40.9,false,USA,"AAII 40.9 is Gemini 3.8 Flash (high) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug google/gemini-3.8-flash-20260902."
+openai/gpt-6-luna,GPT-6 Luna,37.3,false,USA,"AAII 37.3 is GPT-6 Luna (max) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug openai/gpt-6-luna-20260922."
+xiaomi/mimo-v2.5-pro,MiMo V2.5 Pro,26,true,China,
+google/gemini-3.1-flash-lite,Gemini 3.1 Flash Lite,16,false,USA,
+openai/gpt-5.5,GPT-5.5,38,false,USA,
+anthropic/claude-sonnet-4.5,Claude Sonnet 4.5,21,false,USA,score reflects current re-scored AA Intelligence Index; scored higher at original launch under an older index version
+openai/gpt-4o-mini,GPT-4o-mini,7,false,USA,score reflects current re-scored AA Intelligence Index (much higher under original index version at launch)
+qwen/qwen3.6-plus-04-02,Qwen3.6 Plus,27,false,China,Qwen Plus tier is API-only (unlike open Qwen3.6-27B/35B-A3B)
+meta/muse-spark-1.3-contributor,Muse Spark 1.3 Contributor,,false,,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+upstage/solar-pro4,Solar Pro 4,28,false,South Korea,"Proprietary flagship, no public weights"
+deepseek/deepseek-v4-pro-0813,DeepSeek V4 Pro 0813,36,true,China,"AAII 36 is DeepSeek V4 Pro 0813 (Reasoning, Max Effort) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug deepseek/deepseek-v4-pro-20260813."
+google/gemma-4-31b-it,Gemma 4 31B,19,true,USA,AAII is for the reasoning variant
+anthropic/claude-haiku-4.5,Claude Haiku 4.5,17,false,USA,
+openai/gpt-5.4,GPT-5.4,39,false,USA,
+google/gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,30,false,USA,
+z-ai/glm-5,GLM 5,28,true,China,
+google/gemini-3.6-flash,Gemini 3.6 Flash,34,false,USA,AAII is for the (high) variant on artificialanalysis.ai
+google/gemma-4-26b-a4b-it,Gemma 4 26B A4B,17,true,USA,AAII is for the reasoning variant
+openai/gpt-5.6-terra,GPT-5.6 Terra,42,false,USA,AAII is for the (max) variant on artificialanalysis.ai
+nvidia/nemotron-3.5-lightning,Nemotron 3.5 Lightning,24,true,USA,
+z-ai/glm-5.1,GLM 5.1,26,true,China,AAII is for the reasoning variant
+openai/gpt-6-astra,GPT-6 Astra,53,false,USA,Manually pinned per request (below OpenRouter top-100 by volume so far). AAII from canonical no-suffix (max effort) AA page for methodology consistency with the rest of the dataset.
+mistralai/mistral-nemo,Mistral Nemo,,true,France,AAII not published for this older model
+google/gemini-3.1-flash-lite-preview,Gemini 3.1 Flash Lite Preview,16,false,USA,
+google/gemini-3.5-flash,Gemini 3.5 Flash,33,false,USA,AAII is for the (high) variant on artificialanalysis.ai
+openai/gpt-5-mini-2025-08-07,GPT-5 Mini,17,false,USA,AAII is for the (high) variant on artificialanalysis.ai
+inclusionai/ling-3.0-flash-fin,Ling 3.0 Flash Fin,22.6,false,China,"AAII 22.6 is Ling-3.0-flash-Fin from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug inclusionai/ling-3.0-flash-fin-20260827."
+anthropic/claude-opus-5.5,Claude Opus 5.5,58,false,USA,"Adaptive reasoning max-effort, default-fallback score"
+z-ai/glm-5-turbo,GLM 5 Turbo,27,false,China,No Hugging Face release found for the Turbo checkpoint; appears API-only unlike other GLM models
+openai/gpt-5.6-luna-pro,GPT-5.6 Luna Pro,37,false,USA,"Luna ""Pro"" is Luna run at max reasoning effort; used AA's Luna (max) score"
+anthropic/claude-opus-4.5,Claude Opus 4.5,29,false,USA,AAII is for the reasoning variant
+openai/gpt-5.4-mini,GPT-5.4 Mini,24,false,USA,AAII is for the (xhigh) variant on artificialanalysis.ai
+anthropic/claude-fable-5,Claude Fable 5,50,false,USA,AAII is for the (with fallback) variant on artificialanalysis.ai
+qwen/qwen3-235b-a22b-07-25,Qwen3 235B A22B Instruct 2507,18,true,China,
+z-ai/glm-4.7,GLM 4.7,22,true,China,
+xiaomi/mimo-v2.6-pro,MiMo-V2.6-Pro,46.3,true,China,"AAII 46.3 is MiMo-V2.6-Pro from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug xiaomi/mimo-v2.6-pro-20260921."
+inclusionai/ling-3.0-flash,Ling 3.0 Flash,25,true,China,InclusionAI is an Ant Group affiliate
+openai/gpt-oss-20b,gpt-oss-20b,9,true,USA,AA score is for high reasoning effort (AA default page)
+openai/gpt-5-nano-2025-08-07,GPT-5 Nano,13,false,USA,AA score is for high reasoning effort (AA default page)
+qwen/qwen3.8-max-0902,Qwen3.8 Max,45,false,China,"2.4T-param MoE flagship, API-only. Real OpenRouter/AA numbers (not instructor-specified like the 27B): $2/$6 per M in/out, AAII 45 evaluated 0902"
+x-ai/grok-4.6,Grok 4.6,44,false,USA,"OpenRouter lists vendor as ""SpaceXAI""; only Grok-1/Grok-2 have open weights, Grok 4.6 is API-only. AA score is for high reasoning effort (AA default page) Pinned Grok 4.x row: Grok 4.7 is labelled; Grok 4.6 and 4.5 are included without labels."
+openai/gpt-5.4-nano,GPT-5.4 Nano,21,false,USA,AA score is for xhigh reasoning effort (AA default page for this model)
+anthropic/claude-fable-5.1,Claude Fable 5.1,53,false,USA,"Adaptive reasoning max-effort, default-fallback score"
+openai/gpt-6-sol,GPT-6 Sol,47.5,false,USA,"AAII 47.5 is GPT-6 Sol (max) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug openai/gpt-6-sol-20260922."
+x-ai/grok-4.5,Grok 4.5,39,false,USA,"AAII is for the (high) variant; artificialanalysis.ai lists the vendor as ""SpaceXAI"" Pinned Grok 4.x row: Grok 4.7 is labelled; Grok 4.6 and 4.5 are included without labels."
+minimax/minimax-m2.1,MiniMax M2.1,21,true,China,
+google/gemini-2.5-pro,Gemini 2.5 Pro,16,false,USA,
+z-ai/glm-4.5-air,GLM 4.5 Air,11,true,China,
+openai/gpt-5.3-codex,GPT-5.3-Codex,33,false,USA,AA score is for xhigh reasoning effort (AA default page)
+qwen/qwen3.8-flash,Qwen3.8 Flash,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3.7-flash,Qwen3.7 Flash,,false,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+openai/gpt-5.2,GPT-5.2,30,false,USA,AA score is for xhigh reasoning effort (AA default page)
+openai/gpt-4.1-mini-2025-04-14,GPT-4.1 Mini,10,false,USA,
+qwen/qwen3.7-max,Qwen3.7 Max,29,false,China,API-only; no open weights released for this Max-class checkpoint
+qwen/qwen3.8-27b,Qwen3.8 27B,37,true,China,"AAII stored here remains the instructor estimate 37 from the Qwen3.6-27B predecessor, kept because the original row was an explicit estimate rather than a measured score. Price is the instructor override $0.01/$0.02 per million input/output, not the live standard catalog price ($0.425/$2.55 per million)."
+deepseek/deepseek-chat-v3-0324,DeepSeek V3 0324,10,true,China,
+qwen/qwen3.5-flash-02-23,Qwen3.5-Flash,,false,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+deepseek/deepseek-chat-v3.1,DeepSeek V3.1,14,true,China,Used AA's non-reasoning/chat variant score to match the chat naming
+deepseek/deepseek-v4-flash-vision-exp,DeepSeek V4 Flash Vision Exp,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+moonshotai/kimi-k2.7-code,Kimi K2.7 Code,26,true,China,
+meta-llama/llama-3.1-8b-instruct,Llama 3.1 8B Instruct,7,true,USA,
+thinkingmachines/inkling,Inkling,25,true,,"AAII 25 is Inkling (xhigh) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug thinkingmachines/inkling-20260715."
+nex-agi/nex-n2.5-pro,Nex-N2.5-Pro,,true,,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+inclusionai/ling-3.0-flash-vl,Ling 3.0 Flash VL,24.6,true,China,"AAII 24.6 is Ling-3.0-flash-VL from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug inclusionai/ling-3.0-flash-vl-20260910."
+anthropic/claude-sonnet-4,Claude Sonnet 4,19,false,USA,Used AA's reasoning/thinking variant score (AA default page)
+meta/muse-spark-1.3,Muse Spark 1.3,48,false,USA,"AAII 48 is Muse Spark 1.3 (max), read from https://artificialanalysis.ai/models/muse-spark-1-3 on 2026-10-02 (Intelligence Index v4.3.2). Curated addition after the 2026-09-30 snapshot; earlier Muse scores remain stored snapshot values. Standard price and measured usage remain from the saved OpenRouter catalog and rankings."
+qwen/qwen3.5-397b-a17b,Qwen3.5 397B A17B,18,true,China,
+anthropic/claude-sonnet-5.5,Claude Sonnet 5.5,56,false,USA,"Adaptive reasoning max-effort, default-fallback score"
+qwen/qwen3.7-plus,Qwen3.7 Plus,25,false,China,Plus tier is API-only; no HF weights released
+openai/gpt-6.1-sol,GPT-6.1 Sol,51.8,false,USA,"AAII 51.8 is GPT-6.1 Sol (max) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug openai/gpt-6.1-sol-20260929. Initially added as a benchmark cohort without observed usage. Volume updated on 2026-10-05 to 780000000000 tokens from the rounded 780B last-30-days activity figure at https://openrouter.ai/compare/moonshotai/kimi-k3/openai/gpt-6.1-sol. This interim rolling total was superseded by the authenticated daily-rankings refresh on 2026-10-05; current chart usage is the monthly average from the recorded rankings window. Pinned. Standard catalog price is $2/$10 per million; the :batch variant is $1/$5 and is not used."
+openai/gpt-6-luna-pro,GPT-6 Luna Pro,,false,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+google/gemini-3.5-flash-lite,Gemini 3.5 Flash Lite,22.2,false,USA,"AAII 22.2 is Gemini 3.5 Flash-Lite from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug google/gemini-3.5-flash-lite-20260721."
+poolside/laguna-xs-2.1,Laguna XS 2.1,,true,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+x-ai/grok-4.7,Grok 4.7,46.4,false,USA,"AAII 46.4 is Grok 4.7 (xhigh) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug x-ai/grok-4.7-20260916. Pinned Grok 4.x row: Grok 4.7 is labelled; Grok 4.6 and 4.5 are included without labels."
+mistralai/devstral-2512,Devstral 2 2512,9,true,France,
+meta/muse-spark-1.2-contributor,Muse Spark 1.2 Contributor,,false,,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+openai/gpt-4.1-2025-04-14,GPT-4.1,13,false,USA,
+qwen/qwen3-coder-480b-a35b-07-25,Qwen3 Coder 480B A35B,12,true,China,
+openai/gpt-5-2025-08-07,GPT-5,23,false,USA,AAII shown is for the (high) reasoning-effort variant on artificialanalysis.ai
+openai/gpt-5.2-codex,GPT-5.2-Codex,29,false,USA,AAII shown is for the (xhigh) reasoning-effort variant on artificialanalysis.ai
+qwen/qwen3-coder-next-2025-02-03,Qwen3 Coder Next,9,true,China,
+openai/gpt-5.1,GPT-5.1,25,false,USA,AAII shown is for the (high) reasoning-effort variant on artificialanalysis.ai
+x-ai/grok-4.3,Grok 4.3,24.9,false,USA,"AAII 24.9 is Grok 4.3 (high) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug x-ai/grok-4.3-20260430."
+qwen/qwen3.5-35b-a3b,Qwen3.5-35B-A3B,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+meta-llama/llama-3.3-70b-instruct,Llama 3.3 70B Instruct,8,true,USA,
+z-ai/glm-4.7-flash,GLM 4.7 Flash,15,true,China,AAII shown is for the Reasoning variant on artificialanalysis.ai
+moonshotai/kimi-k2-0905,Kimi K2 0905,15,true,China,
+arcee-ai/trinity-large-thinking,Trinity Large Thinking,10.8,true,,"AAII 10.8 is Trinity Large Thinking from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug arcee-ai/trinity-large-thinking."
+z-ai/glm-5.3-flashx,GLM 5.3 FlashX,,false,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3.5-9b,Qwen3.5-9B,11.2,true,China,"AAII 11.2 is Qwen3.5 9B (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3.5-9b-20260310."
+mistralai/mistral-small-3.2-24b-instruct-2506,Mistral Small 3.2 24B,8,true,France,
+qwen/qwen3-32b,Qwen3 32B,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3.6-35b-a3b,Qwen3.6 35B A3B,18.2,true,China,"AAII 18.2 is Qwen3.6 35B A3B (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3.6-35b-a3b-20260415."
+qwen/qwen3.5-plus-02-15,Qwen3.5 Plus 2026-02-15,,false,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-next-80b-a3b-instruct,Qwen3 Next 80B A3B Instruct,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+google/gemma-3-27b-it,Gemma 3 27B,,true,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-vl-235b-a22b-instruct,Qwen3 VL 235B A22B Instruct,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+z-ai/glm-4.6,GLM 4.6,15,true,China,
+deepseek/deepseek-v3.2-exp,DeepSeek V3.2 Exp,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+meta-llama/llama-4-maverick,Llama 4 Maverick,,true,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+openai/gpt-5.6-sol-pro,GPT-5.6 Sol Pro,,false,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+moonshotai/kimi-k2-thinking,Kimi K2 Thinking,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+minimax/minimax-m2,MiniMax M2,19,true,China,
+openai/gpt-4.1-nano,GPT-4.1 Nano,,false,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+z-ai/glm-5v-turbo,GLM 5V Turbo,,false,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+nvidia/nemotron-3-nano-30b-a3b,Nemotron 3 Nano 30B A3B,8.9,true,USA,"AAII 8.9 is NVIDIA Nemotron 3 Nano 30B A3B (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug nvidia/nemotron-3-nano-30b-a3b."
+meta/muse-spark-1.2,Muse Spark 1.2,39.6,false,,"AAII 39.6 is Muse Spark 1.2 (xhigh) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug meta/muse-spark-1.2-20260805."
+deepseek/deepseek-v3.1-terminus,DeepSeek V3.1 Terminus,14.8,true,China,"AAII 14.8 is DeepSeek V3.1 Terminus (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug deepseek/deepseek-v3.1-terminus."
+deepseek/deepseek-r1-0528,R1 0528,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+openai/gpt-4o,GPT-4o,,false,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+google/gemini-3.1-pro-preview-customtools,Gemini 3.1 Pro Preview Custom Tools,,false,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+mistralai/mistral-medium-3-5,Mistral Medium 3.5,14.2,false,France,"AAII 14.2 is Mistral Medium 3.5 from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug mistralai/mistral-medium-3.5-20260430."
+x-ai/grok-4.20,Grok 4.20,,false,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+meta/muse-spark-1.1,Muse Spark 1.1,33.7,false,,"AAII 33.7 is Muse Spark 1.1 (xhigh) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug meta/muse-spark-1.1-20260709."
+qwen/qwen3-vl-8b-instruct,Qwen3 VL 8B Instruct,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3.6-flash,Qwen3.6 Flash,,false,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-vl-32b-instruct,Qwen3 VL 32B Instruct,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+meta-llama/llama-4-scout,Llama 4 Scout,,true,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+bytedance-seed/seed-2.0-mini,Seed-2.0-Mini,,false,,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+meta-llama/llama-3.1-70b-instruct,Llama 3.1 70B Instruct,,true,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-vl-235b-a22b-thinking,Qwen3 VL 235B A22B Thinking,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+google/gemma-3-12b-it,Gemma 3 12B,,true,USA,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+mistralai/codestral-2508,Codestral 2508,,false,France,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+deepseek/deepseek-chat,DeepSeek V3,8.5,true,China,"AAII 8.5 is DeepSeek V3 (Dec '24) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug deepseek/deepseek-chat."
+mistralai/mistral-large-2512,Mistral Large 3 2512,9.3,false,France,"AAII 9.3 is Mistral Large 3 from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug mistralai/mistral-large-2512."
+qwen/qwen3-next-80b-a3b-thinking,Qwen3 Next 80B A3B Thinking,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-30b-a3b-instruct-2507,Qwen3 30B A3B Instruct 2507,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+mistralai/ministral-8b-2512,Ministral 3 8B 2512,,true,France,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+mistralai/ministral-14b-2512,Ministral 3 14B 2512,,true,France,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-235b-a22b-thinking-2507,Qwen3 235B A22B Thinking 2507,12.7,true,China,"AAII 12.7 is Qwen3 235B A22B 2507 (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3-235b-a22b-thinking-2507."
+qwen/qwen3-30b-a3b,Qwen3 30B A3B,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3-235b-a22b,Qwen3 235B A22B,,true,China,No intelligence_index matched this catalog id in the benchmarks snapshot; AAII left blank.
+qwen/qwen3.8-2.4t-a95b,Qwen3.8 2.4T A95B,39.9,true,China,"AAII 39.9 is Qwen3.8 2.4T A95B from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3.8-2.4t-a95b-20260812. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+thinkingmachines/inkling-small,Inkling Small,25.7,true,,"AAII 25.7 is Inkling Small from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug thinkingmachines/inkling-small-20260730. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+qwen/qwen3.6-27b,Qwen3.6 27B,21.4,true,China,"AAII 21.4 is Qwen3.6 27B (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3.6-27b-20260422. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+meituan/longcat-2.0,LongCat 2.0,19.1,true,,"AAII 19.1 is LongCat 2.0 from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug meituan/longcat-2.0-20260720. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+qwen/qwen3.5-122b-a10b,Qwen3.5-122B-A10B,15.6,true,China,"AAII 15.6 is Qwen3.5 122B A10B (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3.5-122b-a10b-20260224. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+cohere/command-a,Command A,13.1,true,,"AAII 13.1 is Command A+ from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug cohere/command-a-03-2025. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+inception/mercury-2.5,Mercury 2.5,12.3,false,,"AAII 12.3 is Mercury 2.5 from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug inception/mercury-2.5-20260908. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+deepseek/deepseek-r1,R1,11.4,true,China,"AAII 11.4 is DeepSeek R1 (Jan '25) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug deepseek/deepseek-r1. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+mistralai/mistral-small-2603,Mistral Small 4,11.3,true,France,"AAII 11.3 is Mistral Small 4 (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug mistralai/mistral-small-2603. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+ibm-granite/granite-4.2-8b,Granite 4.2 8B,11.1,true,,"AAII 11.1 is Granite 4.2 8B from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug ibm-granite/granite-4.2-8b-20260831. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+openai/o3-mini-high,o3 Mini High,11,false,USA,"AAII 11 is o3-mini (high) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug openai/o3-mini-high-2025-01-31. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+qwen/qwen3-30b-a3b-thinking-2507,Qwen3 30B A3B Thinking 2507,9.8,true,China,"AAII 9.8 is Qwen3 30B A3B 2507 (Reasoning) from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug qwen/qwen3-30b-a3b-thinking-2507. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+mistralai/mistral-medium-3.1,Mistral Medium 3.1,9.2,false,France,"AAII 9.2 is Mistral Medium 3.1 from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug mistralai/mistral-medium-3.1. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+upstage/solar-pro-3,Solar Pro 3,7.8,false,South Korea,"AAII 7.8 is Solar Pro 3 from Artificial Analysis via the OpenRouter benchmarks snapshot as of 2026-09-30T12:00:56.392Z, source https://artificialanalysis.ai, permaslug upstage/solar-pro-3. Benchmark cohort only: not a usage rank, and avg_monthly_tokens is not a measurement."
+google/gemini-4-argon,Gemini 4 Argon,53,false,USA,"AAII 53 is Gemini 4 Argon (high), the highest available reasoning setting, verified 2026-10-01 at https://artificialanalysis.ai/models/gemini-4-argon/. The chart uses standard Google API prices of $4/$20 per million input/output tokens ($0.56 per 100K-input/8K-output task), excluding the temporary 50% promotional $2/$10 pricing at the user's request, sourced from https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs. Not in the public OpenRouter catalog checked 2026-10-01; canonical_id is an internal dataset key, not a verified OpenRouter id. Pinned, with 1 nominal token/month at the user's request until observed usage is available; this is not measured volume or a usage rank. Release date 2026-09-30 and 1M context from Artificial Analysis."

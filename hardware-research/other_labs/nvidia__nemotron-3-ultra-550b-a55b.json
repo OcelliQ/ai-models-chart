@@ -1,0 +1,15 @@
+{
+  "canonical_id": "nvidia/nemotron-3-ultra-550b-a55b",
+  "status": "estimated",
+  "total_params_b": 550,
+  "weights_gib": 327.8,
+  "required_memory_gib": 367.8,
+  "quantization": "NVFP4 (official checkpoint)",
+  "sources": [
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4/tree/main"
+  ],
+  "notes": "Exact Nemotron 3 Ultra checkpoint card reports 550B total parameters and the NVFP4 repository tree reports 352 GB. Converted 352 decimal GB to 327.8 GiB. Required footprint adds an estimated 24 GiB for one 108K-token session cache, runtime, and OS plus 16 GiB operational headroom; this cache estimate is uncertain for the hybrid Mamba/attention architecture. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02",
+  "context_tokens": 108000
+}

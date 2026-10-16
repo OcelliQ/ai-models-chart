@@ -1,0 +1,23 @@
+{
+  "done": [
+    "arcee-ai/trinity-large-thinking",
+    "cohere/command-a",
+    "google/gemma-4-26b-a4b-it",
+    "google/gemma-4-31b-it",
+    "ibm-granite/granite-4.2-8b",
+    "meta-llama/llama-3.1-8b-instruct",
+    "meta-llama/llama-3.3-70b-instruct",
+    "mistralai/devstral-2512",
+    "mistralai/mistral-small-2603",
+    "mistralai/mistral-small-3.2-24b-instruct-2506",
+    "nvidia/nemotron-3-nano-30b-a3b",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "nvidia/nemotron-3-ultra-550b-a55b",
+    "nvidia/nemotron-3.5-lightning",
+    "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
+    "thinkingmachines/inkling",
+    "thinkingmachines/inkling-small"
+  ],
+  "remaining": []
+}

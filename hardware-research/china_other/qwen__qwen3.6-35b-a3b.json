@@ -1,0 +1,14 @@
+{
+  "canonical_id": "qwen/qwen3.6-35b-a3b",
+  "status": "estimated",
+  "total_params_b": 35,
+  "weights_gib": 16.3,
+  "required_memory_gib": 36.4,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
+  ],
+  "notes": "Official Qwen repository name and model config identify 35B-A3B; standard architecture label used for total/active count. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

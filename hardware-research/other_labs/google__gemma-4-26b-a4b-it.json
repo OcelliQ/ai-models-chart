@@ -1,0 +1,14 @@
+{
+  "canonical_id": "google/gemma-4-26b-a4b-it",
+  "status": "estimated",
+  "total_params_b": 25.2,
+  "weights_gib": 11.7,
+  "required_memory_gib": 19.7,
+  "quantization": "4-bit weight estimate (ideal 4-bit; full unpruned MoE)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/google/gemma-4-26B-A4B-it"
+  ],
+  "notes": "Google exact-version card reports 25.2B total / 3.8B active parameters, 30 layers, 256K context and hybrid local/global attention. Weight estimate uses all 25.2B parameters. Adds 8 GiB estimated 108K cache/runtime/OS reserve; active parameters do not reduce resident weights.",
+  "checked_on": "2026-10-02"
+}

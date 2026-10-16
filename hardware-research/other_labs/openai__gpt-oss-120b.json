@@ -1,0 +1,15 @@
+{
+  "canonical_id": "openai/gpt-oss-120b",
+  "status": "estimated",
+  "total_params_b": 117,
+  "weights_gib": 60.7,
+  "required_memory_gib": 74.7,
+  "quantization": "Native MXFP4 on MoE weights; official original checkpoint files",
+  "sources": [
+    "https://huggingface.co/openai/gpt-oss-120b",
+    "https://huggingface.co/openai/gpt-oss-120b/tree/main/original"
+  ],
+  "notes": "Official card reports 117B total/5.1B active, native MXFP4 MoE weights, 131072 context, and that the model fits on one 80GB GPU; original/ checkpoint tree reports 65.2 GB (60.7 GiB converted). Adds an estimated 14 GiB for a single 108K-token session, runtime, and OS. Fit claim is vendor evidence; 108K cache reserve is an estimate. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02",
+  "context_tokens": 108000
+}

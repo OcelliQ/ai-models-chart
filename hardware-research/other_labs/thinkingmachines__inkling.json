@@ -1,0 +1,14 @@
+{
+  "canonical_id": "thinkingmachines/inkling",
+  "status": "estimated",
+  "total_params_b": 975.0,
+  "weights_gib": 454.0,
+  "required_memory_gib": 486.0,
+  "quantization": "4-bit weight estimate (ideal 4-bit; full unpruned MoE)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/thinkingmachines/Inkling"
+  ],
+  "notes": "Thinking Machines exact Inkling card reports 975B total / 41B active parameters, 66-layer MoE, BF16/NVFP4 support, multimodal inputs. Weight estimate uses all 975B parameters; adds 32 GiB estimated 108K cache/runtime/OS. No 108K KV measurement found; context reserve for this large multimodal architecture is approximate.",
+  "checked_on": "2026-10-02"
+}

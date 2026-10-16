@@ -1,0 +1,14 @@
+{
+  "canonical_id": "arcee-ai/trinity-large-thinking",
+  "status": "estimated",
+  "total_params_b": 398.0,
+  "weights_gib": 185.3,
+  "required_memory_gib": 225.3,
+  "quantization": "4-bit weight estimate (ideal 4-bit; full unpruned MoE)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/arcee-ai/Trinity-Large-Thinking"
+  ],
+  "notes": "Arcee exact-version card identifies 398B total / about 13B active parameters and long-context MoE; official card is BF16, while official W4A16/NVFP4 family variants exist. Estimate uses all 398B at ideal 4-bit for minimum qualifying footprint; adds 40 GiB estimated 108K cache/runtime/OS. Full experts must remain resident.",
+  "checked_on": "2026-10-02"
+}

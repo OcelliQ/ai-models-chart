@@ -1,0 +1,15 @@
+{
+  "canonical_id": "qwen/qwen3.8-27b",
+  "status": "estimated",
+  "total_params_b": 27,
+  "weights_gib": 12.6,
+  "required_memory_gib": 31.7,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "https://arxiv.org/abs/2608.30320"
+  ],
+  "notes": "Official Qwen card: 27B language-model parameters; native context 262,144, extendable to 1M. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found. The 51B n-gram lookup table sometimes discussed with the Qwen3.8 family belongs to the distinct Qwen3.8-Flash-Next model (Qwen paper reports 125B MoE + 51B embeddings), not this 27B checkpoint.",
+  "checked_on": "2026-10-02"
+}

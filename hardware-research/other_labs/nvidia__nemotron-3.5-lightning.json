@@ -1,0 +1,15 @@
+{
+  "canonical_id": "nvidia/nemotron-3.5-lightning",
+  "status": "estimated",
+  "total_params_b": 30,
+  "weights_gib": 20.1,
+  "required_memory_gib": 44.1,
+  "quantization": "NVFP4 (official checkpoint)",
+  "sources": [
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/tree/main"
+  ],
+  "notes": "Canonical ID maps to NVIDIA Nemotron-3.5-Lightning-30B-A3B; exact official card reports 30B total/3B active, and repository tree reports 21.6 GB (20.1 GiB converted). Adds an estimated 24 GiB for one 108K-token session, runtime, and OS. Card confirms single-GPU deployment; context/cache headroom is an estimate. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02",
+  "context_tokens": 108000
+}

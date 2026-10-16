@@ -1,0 +1,14 @@
+{
+  "canonical_id": "qwen/qwen3-coder-next-2025-02-03",
+  "status": "estimated",
+  "total_params_b": 80,
+  "weights_gib": 37.3,
+  "required_memory_gib": 62.6,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-Coder-Next"
+  ],
+  "notes": "Official Qwen model collection identifies 80B; sparse variant active count omitted here. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

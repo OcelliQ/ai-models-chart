@@ -1,0 +1,14 @@
+{
+  "canonical_id": "meta-llama/llama-3.1-8b-instruct",
+  "status": "estimated",
+  "total_params_b": 8.0,
+  "weights_gib": 3.7,
+  "required_memory_gib": 18.7,
+  "quantization": "4-bit weight estimate (ideal 4-bit)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "notes": "Meta exact-version card reports 8B parameters and 128K context. Weight estimate uses 8B \u00d7 0.5 bytes; adds 15 GiB for an estimated FP16 KV cache at 108K tokens plus runtime and OS headroom. Fits one-session scenario at this approximate footprint.",
+  "checked_on": "2026-10-02"
+}

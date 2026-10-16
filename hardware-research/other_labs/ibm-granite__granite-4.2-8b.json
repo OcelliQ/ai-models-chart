@@ -1,0 +1,14 @@
+{
+  "canonical_id": "ibm-granite/granite-4.2-8b",
+  "status": "estimated",
+  "total_params_b": 8.0,
+  "weights_gib": 3.7,
+  "required_memory_gib": 22.2,
+  "quantization": "4-bit weight estimate (ideal 4-bit)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/ibm-granite/granite-4.2-8b"
+  ],
+  "notes": "IBM exact-version card reports 8B parameters, BF16 source weights, 40 layers, 8 KV heads and 128K native context (512K extension). Estimate uses 8B \u00d7 0.5 bytes; adds 18.5 GiB for approximate 108K FP16 KV, runtime, and OS.",
+  "checked_on": "2026-10-02"
+}

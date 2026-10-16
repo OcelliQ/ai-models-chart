@@ -1,0 +1,37 @@
+{
+  "reviewed_on": "2026-10-02",
+  "scope": [
+    "01-intro/data/build_hardware.py",
+    "01-intro/data/hosting_tiers.json",
+    "01-intro/data/model_hardware.csv",
+    "01-intro/data/make_chart.py hardware variant",
+    "01-intro/slides.typ hardware slide"
+  ],
+  "overall": "No blocking implementation issue found. Approved parameter thresholds, tier session counts, chart classification and disclosed estimate caveats are internally consistent.",
+  "findings": [
+    {
+      "severity": "caveat",
+      "location": "01-intro/data/hardware-research/state.json proposed_fallback.notes; 01-intro/data/model_hardware.csv DeepSeek V4.1 Flash row",
+      "finding": "The state note cites a 4-Spark cluster as an example in the small-server band. At the tier file's stated 121.7 GiB per Spark, four provide 486.8 GiB aggregate, below DeepSeek V4.1 Flash's 540 GiB one-session estimate and 584.7 GiB four-session budget. That example does not meet the all-resident V4.1 estimate; the row's generic 768 GiB planning capacity does fit, but no concrete configuration or price supporting that capacity is verified.",
+      "impact": "Keep the SGD band visibly indicative, and avoid treating four Sparks as a qualifying V4.1 configuration. The slide already says deployments, model-specific sharding, and throughput are unverified; the state note is the inconsistent detail.",
+      "supporting_values": {
+        "four_sparks_gib": 486.8,
+        "v4_1_flash_single_session_gib": 540,
+        "v4_1_flash_four_session_gib": 584.7,
+        "small_server_planning_capacity_gib": 768
+      }
+    },
+    {
+      "severity": "checked",
+      "location": "01-intro/data/build_hardware.py and 01-intro/slides.typ hardware slide",
+      "finding": "The memory calculation takes the larger of the 4-bit shared-weight fallback and researched single-session resident footprint plus 16 GB per additional session; it raises tiers when the planning capacity is exceeded. Tier concurrency is 1/1/1 then 4/8/16, and the slide discloses shared weights, nominal session headroom, indicative budgets, and no latency/throughput or qualifying-deployment guarantee.",
+      "impact": "Consistent with the approved fallback and parallelism policy."
+    },
+    {
+      "severity": "checked",
+      "location": "01-intro/data/model_hardware.csv GLM-5.3 Flash and Kimi K3 rows; 01-intro/slides.typ hardware slide",
+      "finding": "GLM-5.3 Flash is placed in the two-Spark/large-desktop tier at estimated 224 GiB, below its 243.4 GiB planning capacity; its first-hand 4-bit deployment source reports a 176 GiB checkpoint on two Sparks, while exact minimum residency remains labeled unverified. Kimi K3 uses sourced 2.8T total parameters, exceeds the 1.6T threshold, and lands in the open-ended high-end tier; the slide labels this as an estimate and states actual high-end node count/cost depends on workload.",
+      "impact": "The two highlighted model placements and their caveats match the requested constraints."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "canonical_id": "qwen/qwen3-coder-480b-a35b-07-25",
+  "status": "estimated",
+  "total_params_b": 480,
+  "weights_gib": 223.5,
+  "required_memory_gib": 304.7,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
+  ],
+  "notes": "Official Qwen checkpoint family is 480B total/35B active. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

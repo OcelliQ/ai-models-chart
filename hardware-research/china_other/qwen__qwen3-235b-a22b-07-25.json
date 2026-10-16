@@ -1,0 +1,14 @@
+{
+  "canonical_id": "qwen/qwen3-235b-a22b-07-25",
+  "status": "estimated",
+  "total_params_b": 235,
+  "weights_gib": 109.4,
+  "required_memory_gib": 165.5,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507"
+  ],
+  "notes": "Official card: 235B total /22B active. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

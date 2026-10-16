@@ -1,0 +1,16 @@
+{
+  "canonical_id": "qwen/qwen3.8-2.4t-a95b",
+  "status": "estimated",
+  "total_params_b": 2400,
+  "weights_gib": 1117.6,
+  "required_memory_gib": 1389.1,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+    "https://github.com/vllm-project/vllm-ascend/blob/main/docs/source/tutorials/models/Qwen3.8-2.4T-A95B.md",
+    "https://arxiv.org/abs/2608.30320"
+  ],
+  "notes": "Official model repository is the primary target; vLLM Ascend deployment card confirms 2,400B total/95B active. No separate Engram-style table count disclosed for this variant. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found. Reviewed Qwen3.8 family table evidence: the published 51B n-gram lookup table belongs to distinct Qwen3.8-Flash-Next (125B MoE + 51B embeddings), not an identified component of this 2.4T checkpoint; no separate table count is reported for this card.",
+  "checked_on": "2026-10-02"
+}

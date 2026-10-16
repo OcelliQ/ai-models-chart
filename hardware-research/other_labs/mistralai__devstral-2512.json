@@ -1,0 +1,14 @@
+{
+  "canonical_id": "mistralai/devstral-2512",
+  "status": "estimated",
+  "total_params_b": 123,
+  "weights_gib": 57.3,
+  "required_memory_gib": 81.3,
+  "quantization": "4-bit weight estimate (ideal 4-bit; full unpruned model)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512"
+  ],
+  "notes": "Canonical ID maps to official Devstral-2-123B-Instruct-2512 checkpoint; official repository name/card establishes 123B, while HF collection rounds it to 125B. Estimate uses 123B \u00d7 0.5 bytes for all weights. Adds 24 GiB approximate 108K cache/runtime/OS reserve; exact cache layout not established in sources.",
+  "checked_on": "2026-10-02"
+}

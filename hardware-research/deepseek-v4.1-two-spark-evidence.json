@@ -1,0 +1,12 @@
+{
+  "checked_on": "2026-10-02",
+  "model": "DeepSeek V4.1 Flash",
+  "two_spark_local_hosting": "Reported by first-hand community recipes; not independently reproduced.",
+  "sources": [
+    "https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks",
+    "https://github.com/coolbho3k/DeepSeek-v4.1-Flash-2x-DGX-Spark"
+  ],
+  "miaai_recipe": "EXL3 average 2.9 bpw, 196 GiB model checkpoint; original FP8 Engram tables read from disk/NFS or packed per-rank local NVMe. Reports 31.6 tok/s one short stream, 42.5 aggregate two streams; 100K prompt ~102s prefill and 19-19.4 tok/s decode in an older configuration.",
+  "coolbho3k_recipe": "EXL3 routed experts 3 bpw; disk-backed packed Engram retrieval; short six-session checks reported. Current release candidate is not clean-install-qualified; long-context capacity checks used previous runtime.",
+  "current_chart_qualification": "User explicitly approved the two-Spark / ≤S$25k exception; model-specific override is saved in hosting_tiers.json."
+}

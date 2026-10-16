@@ -1,0 +1,14 @@
+{
+  "canonical_id": "meituan/longcat-2.0",
+  "status": "estimated",
+  "total_params_b": 1600,
+  "weights_gib": 745.1,
+  "required_memory_gib": 942.1,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://github.com/meituan-longcat/longcat-2.0"
+  ],
+  "notes": "Official Meituan repo: 1.6T total/~48B active. The official repo explicitly says the 1.6T total includes 135B N-gram Embedding parameters; all 1.6T, including this lookup table, is treated as resident. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

@@ -1,0 +1,14 @@
+{
+  "canonical_id": "xiaomi/mimo-v2.5",
+  "status": "estimated",
+  "total_params_b": 310,
+  "weights_gib": 144.4,
+  "required_memory_gib": 208.1,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/XiaomiMiMo/MiMo-V2.5"
+  ],
+  "notes": "MiMo-V2.5 official card gives 310B total/15B active; multimodal components included in card architecture. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

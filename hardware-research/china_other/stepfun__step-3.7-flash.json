@@ -1,0 +1,14 @@
+{
+  "canonical_id": "stepfun/step-3.7-flash",
+  "status": "estimated",
+  "total_params_b": 198,
+  "weights_gib": 92.2,
+  "required_memory_gib": 131.3,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/stepfun-ai/Step-3.7-Flash"
+  ],
+  "notes": "Official StepFun card: 198B total, comprising 196B language backbone and 1.8B vision encoder; sparse model activates ~11B. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

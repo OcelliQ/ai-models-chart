@@ -1,0 +1,14 @@
+{
+  "canonical_id": "qwen/qwen3.5-122b-a10b",
+  "status": "estimated",
+  "total_params_b": 122,
+  "weights_gib": 56.8,
+  "required_memory_gib": 87.0,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3.5-122B-A10B"
+  ],
+  "notes": "Official Qwen card/repository identifies Qwen3.5-122B-A10B; Hugging Face repository page reports 250GB BF16 artifact set. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

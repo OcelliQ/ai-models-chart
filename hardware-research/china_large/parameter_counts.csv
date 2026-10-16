@@ -1,0 +1,31 @@
+canonical_id,total_params_b,backbone_params_b,lookup_params_b,count_status,sources,checked_on,notes
+deepseek/deepseek-v4-flash,284,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,2026-10-02,Preview family card identifies V4 Flash as 284B; use four-bit theoretical estimate.
+deepseek/deepseek-v4-flash-0731,304,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731,2026-10-02,Exact release card says 304B; use four-bit theoretical estimate.
+z-ai/glm-5.3-flash,320,,,sourced,https://huggingface.co/zai-org/GLM-5.3-Flash|https://github.com/Entrpi/glm-5.3-flash-exl3-2x-spark,2026-10-02,"Official model card identifies 320B total / 18B active parameters. First-hand 4-bit EXL3 deployment reports ~176 GiB checkpoint on two DGX Spark units and serves well above 108K context. Required memory is estimated as 176 GiB checkpoint + 48 GiB for a single 108K-session KV, runtime and OS = 224 GiB; deployment reports demonstrate related serving but not this exact minimum."
+minimax/minimax-m3,427,,,sourced,https://huggingface.co/MiniMaxAI/MiniMax-M3,2026-10-02,Official card says about 427B total; use four-bit estimate.
+deepseek/deepseek-v4.1-flash,748,552,196,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash|https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks,2026-10-02,"552B backbone + 196B Engram lookup weights = 748B total. Hugging Face model listing separately displays 763B model tensors; retained the official card decomposition and record this discrepancy as ambiguous, without adding 763B to the decomposition."
+z-ai/glm-5.2,753,,,sourced,https://huggingface.co/zai-org/GLM-5.2,2026-10-02,Official Z.ai model collection reports 753B; four-bit theoretical estimate.
+deepseek/deepseek-v4-pro,1600,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,2026-10-02,Official preview card says 1.6T total.
+deepseek/deepseek-v3.2,685,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V3.2,2026-10-02,Official card says 685B.
+minimax/minimax-m2.5,229,,,sourced,https://huggingface.co/MiniMaxAI/MiniMax-M2.5,2026-10-02,Official card says 229B.
+moonshotai/kimi-k3,2800,,,sourced,https://huggingface.co/moonshotai/Kimi-K3,2026-10-02,Official model card says 2.8T total; 1M-context multimodal model.
+z-ai/glm-5.3,753,,,sourced,https://huggingface.co/zai-org/GLM-5.3,2026-10-02,Official Z.ai model collection reports 753B.
+minimax/minimax-m2.7,229,,,sourced,https://huggingface.co/MiniMaxAI/MiniMax-M2.7,2026-10-02,Official model card reports 229B.
+moonshotai/kimi-k2.5-0127,1000,,,sourced,https://huggingface.co/moonshotai/Kimi-K2.5,2026-10-02,Official family model config/card; K2.5 release is 1T. 0127 alias is treated as same model weights.
+moonshotai/kimi-k2.6,1000,,,sourced,https://huggingface.co/moonshotai/Kimi-K2.6,2026-10-02,Official card says 1T params.
+deepseek/deepseek-v4-pro-0813,1700,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,2026-10-02,Official organization catalog/card reports 1.7T for 0813 snapshot.
+z-ai/glm-5,744,,,sourced,https://huggingface.co/zai-org/GLM-5,2026-10-02,Official card says 744B total.
+z-ai/glm-5.1,754,,,sourced,https://huggingface.co/zai-org/GLM-5.1,2026-10-02,Official card reports 754B params.
+z-ai/glm-4.7,358,,,sourced,https://huggingface.co/zai-org/GLM-4.7,2026-10-02,Official card says 358B params.
+minimax/minimax-m2.1,229,,,estimated,https://huggingface.co/MiniMaxAI/MiniMax-M2.5,2026-10-02,M2.5 official card reports 229B and explicitly lists M2.1 as same series; estimate same total architecture.
+z-ai/glm-4.5-air,106,,,sourced,https://huggingface.co/zai-org/GLM-4.5-Air,2026-10-02,Official card says 106B total.
+deepseek/deepseek-chat-v3-0324,671,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V3,2026-10-02,Official V3 family total is 671B; dated 0324 fine-tune retains base architecture.
+deepseek/deepseek-chat-v3.1,671,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V3.1,2026-10-02,Official card reports V3.1 671B.
+moonshotai/kimi-k2.7-code,1000,,,estimated,https://huggingface.co/moonshotai/Kimi-K2.7-Code,2026-10-02,"Official config identifies Kimi K2.5 architecture (384 routed experts); inferred 1T family size from official K2.5 card, so estimate."
+z-ai/glm-4.7-flash,,,,unknown,https://huggingface.co/zai-org/GLM-4.7-Flash,2026-10-02,Exact official model page found but no source-reported total parameter count in available card/config evidence; avoid fabricating one. Thus no defensible 4-bit weight or resident-memory estimate is available.
+moonshotai/kimi-k2-0905,1000,,,sourced,https://huggingface.co/moonshotai/Kimi-K2,2026-10-02,Official Kimi K2 family card reports 1T; 0905 snapshot uses K2 model family.
+z-ai/glm-4.6,355,,,estimated,https://huggingface.co/zai-org/GLM-4.5,2026-10-02,GLM-4.6 official page uses GLM-4.5 355B-family architecture; mark estimated family carryover.
+minimax/minimax-m2,229,,,sourced,https://huggingface.co/collections/MiniMaxAI/minimax-m2,2026-10-02,Official MiniMax collection identifies M2 as 229B.
+deepseek/deepseek-v3.1-terminus,685,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus,2026-10-02,Official card reports 685B params; config is named 671B but HF parameter count includes full tensors. Use official displayed count.
+deepseek/deepseek-chat,671,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-V3,2026-10-02,DeepSeek V3 family card reports 671B.
+deepseek/deepseek-r1,671,,,sourced,https://huggingface.co/deepseek-ai/DeepSeek-R1,2026-10-02,"Official release reports 671B total, 37B activated."

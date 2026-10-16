@@ -1,0 +1,15 @@
+{
+  "canonical_id": "openai/gpt-oss-20b",
+  "status": "estimated",
+  "total_params_b": 21,
+  "weights_gib": 12.8,
+  "required_memory_gib": 23.8,
+  "quantization": "Native MXFP4 on MoE weights; official checkpoint",
+  "sources": [
+    "https://huggingface.co/openai/gpt-oss-20b",
+    "https://huggingface.co/openai/gpt-oss-20b/tree/main"
+  ],
+  "notes": "Official card reports 21B total/3.6B active, native MXFP4 MoE weights, and serving within 16GB; checkpoint is listed at 41.3 GB for all repository contents, which includes alternate files, so weight payload is estimated from the official 16GB fit statement and MXFP4. Adds 11 GiB estimated cache/runtime/OS for one 108K session. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02",
+  "context_tokens": 108000
+}

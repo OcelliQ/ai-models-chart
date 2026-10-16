@@ -1,0 +1,14 @@
+{
+  "canonical_id": "tencent/hy3",
+  "status": "estimated",
+  "total_params_b": 295,
+  "weights_gib": 137.4,
+  "required_memory_gib": 199.6,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://github.com/Tencent-Hunyuan/Hy3"
+  ],
+  "notes": "Tencent states 295B total / 21B active; 3.8B MTP layer included. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

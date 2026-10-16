@@ -1,0 +1,14 @@
+{
+  "canonical_id": "thinkingmachines/inkling-small",
+  "status": "estimated",
+  "total_params_b": 276,
+  "weights_gib": 159.2,
+  "required_memory_gib": 179.2,
+  "quantization": "NVFP4 official full checkpoint",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/thinkingmachines/Inkling-Small"
+  ],
+  "notes": "Thinking Machines exact Inkling-Small card prose reports 276B total / 12B active parameters; the Hugging Face metadata label says 266B params, so the two official page fields disagree. Official NVFP4 repository tree reports 171 GB for the full checkpoint (159.2 GiB converted, including MTP and auxiliary files). Adds 20 GiB estimated for one 108K session cache, runtime, and OS. Preserve the card/metadata parameter discrepancy; MoE active count does not change full residency. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02"
+}

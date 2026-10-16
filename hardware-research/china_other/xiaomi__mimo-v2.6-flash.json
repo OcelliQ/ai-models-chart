@@ -1,0 +1,14 @@
+{
+  "canonical_id": "xiaomi/mimo-v2.6-flash",
+  "status": "estimated",
+  "total_params_b": 311,
+  "weights_gib": 144.8,
+  "required_memory_gib": 208.7,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+  ],
+  "notes": "Official Xiaomi model repository index identifies the V2.6 Flash checkpoints at 311B; RL variant used as family evidence. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

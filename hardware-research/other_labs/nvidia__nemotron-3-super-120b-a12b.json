@@ -1,0 +1,15 @@
+{
+  "canonical_id": "nvidia/nemotron-3-super-120b-a12b",
+  "status": "estimated",
+  "total_params_b": 120,
+  "weights_gib": 74.9,
+  "required_memory_gib": 98.9,
+  "quantization": "NVFP4 (official checkpoint)",
+  "sources": [
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4/tree/main"
+  ],
+  "notes": "Exact official card reports 120B total/12B active parameters; the NVFP4 repository tree reports 80.4 GB (74.9 GiB converted). Required footprint adds an estimated 24 GiB for one 108K-token session cache, runtime, and OS; hybrid Mamba/attention cache sizing remains approximate. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02",
+  "context_tokens": 108000
+}

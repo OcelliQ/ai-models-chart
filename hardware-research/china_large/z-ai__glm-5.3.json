@@ -1,0 +1,14 @@
+{
+  "canonical_id": "z-ai/glm-5.3",
+  "status": "estimated",
+  "total_params_b": 753,
+  "weights_gib": 350.6,
+  "required_memory_gib": 449,
+  "quantization": "~4-bit weights (ideal packed payload; mixed formats/checkpoint evidence where noted)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/zai-org/GLM-5.3"
+  ],
+  "notes": "Official Z.ai model collection reports 753B. Weights_gib is the ideal unpruned 4-bit payload computed as total parameters × 0.5 bytes ÷ 2^30. Required memory adds 12% weight-format/scales/allocation overhead plus 56 GiB for one 108K session KV, runtime and OS. This is an engineering estimate, not a demonstrated minimum deployment.",
+  "checked_on": "2026-10-02"
+}

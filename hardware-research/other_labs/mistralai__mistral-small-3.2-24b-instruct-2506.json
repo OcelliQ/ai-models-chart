@@ -1,0 +1,14 @@
+{
+  "canonical_id": "mistralai/mistral-small-3.2-24b-instruct-2506",
+  "status": "estimated",
+  "total_params_b": 24.0,
+  "weights_gib": 11.2,
+  "required_memory_gib": 30.2,
+  "quantization": "4-bit weight estimate (ideal 4-bit)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
+  ],
+  "notes": "Exact official card reports about 24B and says ~55 GB GPU RAM in BF16; checkpoint has consolidated BF16 weights. Estimate uses 24B \u00d7 0.5 bytes and adds 19 GiB for approximate 108K FP16 KV plus runtime/OS.",
+  "checked_on": "2026-10-02"
+}

@@ -1,0 +1,14 @@
+{
+  "canonical_id": "z-ai/glm-4.7-flash",
+  "status": "unknown",
+  "total_params_b": null,
+  "weights_gib": null,
+  "required_memory_gib": null,
+  "quantization": "unknown",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/zai-org/GLM-4.7-Flash"
+  ],
+  "notes": "Exact official model page found but no source-reported total parameter count in available card/config evidence; avoid fabricating one. Thus no defensible 4-bit weight or resident-memory estimate is available.",
+  "checked_on": "2026-10-02"
+}

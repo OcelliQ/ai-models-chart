@@ -1,0 +1,15 @@
+{
+  "canonical_id": "nvidia/nemotron-3-nano-30b-a3b",
+  "status": "estimated",
+  "total_params_b": 30,
+  "weights_gib": 18.1,
+  "required_memory_gib": 42.1,
+  "quantization": "NVFP4 (official checkpoint)",
+  "sources": [
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4",
+    "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4/tree/main"
+  ],
+  "notes": "Official exact-version repository reports a 19.4 GB full NVFP4 checkpoint (18.1 GiB converted); model card identifies 30B total/3B active. Adds an estimated 24 GiB for one 108K-token session, runtime, and OS; hybrid Mamba/attention context memory is approximate. The stored-weight artifact or vendor capability evidence is exact-version sourced, but total host footprint at 108K is not a firsthand full-residency measurement; this hosting status is therefore estimated.",
+  "checked_on": "2026-10-02",
+  "context_tokens": 108000
+}

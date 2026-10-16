@@ -1,0 +1,24 @@
+canonical_id,total_params_b,backbone_params_b,lookup_params_b,count_status,sources,checked_on,notes
+xiaomi/mimo-v2.5,310,,,sourced,https://huggingface.co/XiaomiMiMo/MiMo-V2.5,2026-10-02,MiMo-V2.5 official card gives 310B total/15B active; multimodal components included in card architecture.
+tencent/hy3,295,,,sourced,https://github.com/Tencent-Hunyuan/Hy3,2026-10-02,Tencent states 295B total / 21B active; 3.8B MTP layer included.
+tencent/hy3-preview,295,,,estimated,https://huggingface.co/tencent/Hy3-preview,2026-10-02,Preview card identified as 295B total; retained separate from final Hy3 with low version-specific confidence.
+stepfun/step-3.7-flash,198,,,sourced,https://huggingface.co/stepfun-ai/Step-3.7-Flash,2026-10-02,"Official StepFun card: 198B total, comprising 196B language backbone and 1.8B vision encoder; sparse model activates ~11B."
+stepfun/step-3.5-flash,196,,,sourced,https://huggingface.co/stepfun-ai/Step-3.5-Flash,2026-10-02,Official StepFun model card/release identifies 196B MoE backbone and ~11B active; no separate large vision encoder identified.
+xiaomi/mimo-v2.5-pro,1020,,,sourced,https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro,2026-10-02,Official card architecture table gives 1.02T total/42B active.
+xiaomi/mimo-v2.6-flash,311,,,estimated,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL,2026-10-02,Official Xiaomi model repository index identifies the V2.6 Flash checkpoints at 311B; RL variant used as family evidence.
+qwen/qwen3-235b-a22b-07-25,235,,,sourced,https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507,2026-10-02,Official card: 235B total /22B active.
+inclusionai/ling-3.0-flash,124,,,sourced,https://huggingface.co/inclusionAI/Ling-3.0-flash,2026-10-02,Official InclusionAI card: 124B total/5.1B active.
+xiaomi/mimo-v2.6-pro,1000,,,estimated,https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL,2026-10-02,Official Xiaomi model repository index identifies V2.6 Pro at 1T; RL variant used as family evidence.
+inclusionai/ling-3.0-flash-vl,124,,,sourced,https://huggingface.co/inclusionAI/Ling-3.0-flash-VL,2026-10-02,Official VL card gives 124B total / 5.5B active; its separate visual encoder is included in reported total.
+qwen/qwen3.8-27b,27,,,sourced,https://huggingface.co/Qwen/Qwen3.8-27B|https://arxiv.org/abs/2608.30320,2026-10-02,"Official Qwen card: 27B language-model parameters; native context 262,144, extendable to 1M."
+qwen/qwen3.5-397b-a17b,397,,,sourced,https://huggingface.co/Qwen/Qwen3.5-397B-A17B,2026-10-02,Official Qwen card: 397B total/17B active.
+qwen/qwen3-coder-480b-a35b-07-25,480,,,estimated,https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct,2026-10-02,Official Qwen checkpoint family is 480B total/35B active.
+qwen/qwen3-coder-next-2025-02-03,80,,,estimated,https://huggingface.co/Qwen/Qwen3-Coder-Next,2026-10-02,Official Qwen model collection identifies 80B; sparse variant active count omitted here.
+qwen/qwen3.5-9b,9,,,sourced,https://huggingface.co/Qwen/Qwen3.5-9B,2026-10-02,Official Qwen card: 9B.
+qwen/qwen3.6-35b-a3b,35,,,estimated,https://huggingface.co/Qwen/Qwen3.6-35B-A3B,2026-10-02,Official Qwen repository name and model config identify 35B-A3B; standard architecture label used for total/active count.
+qwen/qwen3-235b-a22b-thinking-2507,235,,,estimated,https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507,2026-10-02,Thinking checkpoint belongs to 235B/22B Qwen3-2507 family; architecture is shared with instruct checkpoint.
+qwen/qwen3.8-2.4t-a95b,2400,,,sourced,https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B|https://github.com/vllm-project/vllm-ascend/blob/main/docs/source/tutorials/models/Qwen3.8-2.4T-A95B.md|https://arxiv.org/abs/2608.30320,2026-10-02,"Official model repository is the primary target; vLLM Ascend deployment card confirms 2,400B total/95B active. No separate Engram-style table count disclosed for this variant."
+qwen/qwen3.6-27b,27,,,sourced,https://huggingface.co/Qwen/Qwen3.6-27B,2026-10-02,Official card: 27B.
+meituan/longcat-2.0,1600,1465,135,sourced,https://github.com/meituan-longcat/longcat-2.0,2026-10-02,"Official Meituan repo: 1.6T total/~48B active. The official repo explicitly says the 1.6T total includes 135B N-gram Embedding parameters; all 1.6T, including this lookup table, is treated as resident."
+qwen/qwen3.5-122b-a10b,122,,,sourced,https://huggingface.co/Qwen/Qwen3.5-122B-A10B,2026-10-02,Official Qwen card/repository identifies Qwen3.5-122B-A10B; Hugging Face repository page reports 250GB BF16 artifact set.
+qwen/qwen3-30b-a3b-thinking-2507,30,,,estimated,https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507,2026-10-02,Official Qwen checkpoint family: 30B total/3B active.

@@ -1,0 +1,14 @@
+{
+  "canonical_id": "moonshotai/kimi-k2.6",
+  "status": "estimated",
+  "total_params_b": 1000,
+  "weights_gib": 465.7,
+  "required_memory_gib": 578,
+  "quantization": "~4-bit weights (ideal packed payload; mixed formats/checkpoint evidence where noted)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/moonshotai/Kimi-K2.6"
+  ],
+  "notes": "Official card says 1T params. Weights_gib is the ideal unpruned 4-bit payload computed as total parameters × 0.5 bytes ÷ 2^30. Required memory adds 12% weight-format/scales/allocation overhead plus 56 GiB for one 108K session KV, runtime and OS. This is an engineering estimate, not a demonstrated minimum deployment.",
+  "checked_on": "2026-10-02"
+}

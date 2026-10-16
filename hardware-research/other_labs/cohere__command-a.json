@@ -1,0 +1,14 @@
+{
+  "canonical_id": "cohere/command-a",
+  "status": "estimated",
+  "total_params_b": 111.0,
+  "weights_gib": 51.7,
+  "required_memory_gib": 77.7,
+  "quantization": "4-bit weight estimate (ideal 4-bit; full unpruned model)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025"
+  ],
+  "notes": "Canonical ID maps to exact Command A March 2025 card, which reports 111B parameters, 256K context (HF config 128K), and 3 sliding-window layers plus one global-attention layer. Estimate uses full 111B \u00d7 0.5 bytes; adds 26 GiB for approximate 108K cache/runtime/OS. Access-gated files prevent direct artifact-size confirmation.",
+  "checked_on": "2026-10-02"
+}

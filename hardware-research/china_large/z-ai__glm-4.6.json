@@ -1,0 +1,14 @@
+{
+  "canonical_id": "z-ai/glm-4.6",
+  "status": "estimated",
+  "total_params_b": 355,
+  "weights_gib": 165.3,
+  "required_memory_gib": 242,
+  "quantization": "~4-bit weights (ideal packed payload; mixed formats/checkpoint evidence where noted)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/zai-org/GLM-4.5"
+  ],
+  "notes": "GLM-4.6 official page uses GLM-4.5 355B-family architecture; mark estimated family carryover. Weights_gib is the ideal unpruned 4-bit payload computed as total parameters × 0.5 bytes ÷ 2^30. Required memory adds 12% weight-format/scales/allocation overhead plus 56 GiB for one 108K session KV, runtime and OS. This is an engineering estimate, not a demonstrated minimum deployment.",
+  "checked_on": "2026-10-02"
+}

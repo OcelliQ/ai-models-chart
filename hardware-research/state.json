@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "as_of": "2026-10-02",
+  "hardware_currency": "SGD",
+  "tier_upper_sgd": [
+    5000,
+    10000,
+    25000,
+    100000,
+    500000,
+    null
+  ],
+  "context_tokens": 108000,
+  "minimum_precision_bits": 4,
+  "policy": "Full unpruned model resident in GPU or unified memory, including lookup tables. Weights are shared across concurrent sessions. Exclude expert/lookup disk streaming and sub-4-bit compression. Memory and cost are planning estimates, not verified throughput or vendor quotes. Explicit user-approved model_overrides may use other quantization or disk-backed tables; their source notes describe the exception.",
+  "groups": [
+    "china_large",
+    "china_other",
+    "other_labs"
+  ],
+  "next_steps": [],
+  "proposed_fallback": {
+    "approval_status": "approved",
+    "parameter_definition": "Total resident parameters, including all experts and lookup/Engram/N-gram tables; do not use activated parameters.",
+    "resident_memory_rule_decimal_gb": "0.625 * total_params_b + 16 (4-bit weights +25%reserve +16GBfixed allowance); illustrative, not architecture-specific context validation.",
+    "bands": [
+      {
+        "max_params_b": 32,
+        "hardware_tier": "desktop",
+        "cost_label": "≤S$5k"
+      },
+      {
+        "max_params_b": 180,
+        "hardware_tier": "spark",
+        "cost_label": "≤S$10k"
+      },
+      {
+        "max_params_b": 360,
+        "hardware_tier": "large_desktop",
+        "cost_label": "≤S$25k"
+      },
+      {
+        "max_params_b": 800,
+        "hardware_tier": "small_server",
+        "cost_label": "≤S$100k"
+      },
+      {
+        "max_params_b": 1600,
+        "hardware_tier": "large_server",
+        "cost_label": "≤S$500k"
+      },
+      {
+        "max_params_b": null,
+        "hardware_tier": "cluster",
+        "cost_label": ">S$500k"
+      }
+    ],
+    "precedence": "Qualifying measured deployment or detailed resident memory/configuration evidence overrides this fallback; unknown counts remain unknown.",
+    "notes": "The small-server band also permits a larger desktop cluster with sufficient resident memory. Four Sparks do not meet the saved DeepSeek V4.1 Flash estimate. All fallback assignments are estimates.",
+    "approval_context": "User accepted roughly indicative estimates using Kimi K3 and requested reasonable parallelism from larger desktop clusters onwards."
+  },
+  "parameter_counts_file": "../model_parameters.csv",
+  "parameter_count_summary": {
+    "models": 71,
+    "known": 70,
+    "confidence": {
+      "sourced": 58,
+      "estimated": 12,
+      "unknown": 1
+    }
+  },
+  "hosting_policy_file": "../hosting_tiers.json",
+  "label_policy": "User requested cost-band labels by their upper bound; the final tier remains open-ended.",
+  "artifacts": [
+    "../model_parameters.csv",
+    "../model_hardware.csv",
+    "../hosting_tiers.json",
+    "../../media/charts/cost-vs-aaii-by-hardware.svg",
+    "../../slides.typ"
+  ],
+  "verification": {
+    "unit_tests_passed": 5,
+    "typst_compile": "passed",
+    "svg_xml_and_labels": "passed",
+    "presentation_checks": "passed",
+    "visual_review": "passed",
+    "plotted_models": 140,
+    "hosting_estimates": 68,
+    "api_only": 69,
+    "hosting_unknown": 3,
+    "review_file": "review.json"
+  },
+  "presentation": "Cost of AI title citations removed; sources retained without display. Hosting slide has one frame and no popup.",
+  "palette_policy": "Warm desktop tiers through magenta at ≤S$25k; blue at ≤S$100k; progressively darker blues at ≤S$500k and >S$500k. Colors are defined in make_chart.py HARDWARE_COLORS.",
+  "other_group_policy": "API-only and hosting-unknown data statuses retain their source meanings but merge visually into one grey Other category.",
+  "approved_model_overrides": {
+    "deepseek/deepseek-v4.1-flash": "User explicitly requested ≤S$25k after reviewing two-Spark local hosting recipes. See hosting_tiers.json model_overrides."
+  }
+}

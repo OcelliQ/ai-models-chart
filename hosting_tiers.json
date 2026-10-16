@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "currency": "SGD",
+  "as_of": "2026-10-02",
+  "context_tokens": 108000,
+  "precision_bits": 4,
+  "weight_overhead_factor": 1.25,
+  "per_session_headroom_gb": 16,
+  "cost_status": "indicative_budget_band",
+  "policy": "Full unpruned model resident in GPU or unified memory, including lookup tables. Weights are shared across concurrent sessions. Exclude expert/lookup disk streaming and sub-4-bit compression. Memory and cost are planning estimates, not verified throughput or vendor quotes. Explicit user-approved model_overrides may use other quantization or disk-backed tables; their source notes describe the exception.",
+  "tiers": [
+    {
+      "id": "desktop",
+      "max_params_b": 32,
+      "cost_min_sgd": 0,
+      "cost_max_sgd": 5000,
+      "cost_label": "≤S$5k",
+      "hardware_label": "Desktop",
+      "concurrent_sessions": 1,
+      "planning_memory_gib": 36
+    },
+    {
+      "id": "spark",
+      "max_params_b": 180,
+      "cost_min_sgd": 5000,
+      "cost_max_sgd": 10000,
+      "cost_label": "≤S$10k",
+      "hardware_label": "One Spark",
+      "concurrent_sessions": 1,
+      "planning_memory_gib": 121.7
+    },
+    {
+      "id": "large_desktop",
+      "max_params_b": 360,
+      "cost_min_sgd": 10000,
+      "cost_max_sgd": 25000,
+      "cost_label": "≤S$25k",
+      "hardware_label": "Two Sparks / large desktop",
+      "concurrent_sessions": 1,
+      "planning_memory_gib": 243.4
+    },
+    {
+      "id": "small_server",
+      "max_params_b": 800,
+      "cost_min_sgd": 25000,
+      "cost_max_sgd": 100000,
+      "cost_label": "≤S$100k",
+      "hardware_label": "Larger desktop cluster / small server",
+      "concurrent_sessions": 4,
+      "planning_memory_gib": 768
+    },
+    {
+      "id": "large_server",
+      "max_params_b": 1600,
+      "cost_min_sgd": 100000,
+      "cost_max_sgd": 500000,
+      "cost_label": "≤S$500k",
+      "hardware_label": "Large server",
+      "concurrent_sessions": 8,
+      "planning_memory_gib": 1128
+    },
+    {
+      "id": "cluster",
+      "max_params_b": null,
+      "cost_min_sgd": 500000,
+      "cost_max_sgd": null,
+      "cost_label": ">S$500k",
+      "hardware_label": "High-end server / cluster",
+      "concurrent_sessions": 16,
+      "planning_memory_gib": null
+    }
+  ],
+  "notes": "Parameter thresholds are the approved fallback. Planning memory allowances are coarse reference capacities, not cost-to-memory quotations. Detailed resident memory can raise a fallback tier. Concurrency is a budgeted session count with nominal cache allowance; no latency or tokens-per-second promise is made. The high-end tier has no capacity ceiling: its actual node count and cost remain workload-dependent. Kimi K3 (2.8T total parameters, native MXFP4) is the high-end example.",
+  "sources": [
+    "https://www.nvidia.com/en-sg/products/workstations/dgx-spark/",
+    "https://www.apple.com/sg/mac-studio/",
+    "https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/",
+    "https://www.nvidia.com/en-us/data-center/dgx-h200/",
+    "https://www.nvidia.com/en-us/data-center/dgx-b200/",
+    "https://huggingface.co/moonshotai/Kimi-K3"
+  ],
+  "model_overrides": {
+    "deepseek/deepseek-v4.1-flash": {
+      "hardware_tier": "large_desktop",
+      "quantization": "EXL3 approximately 2.9–3 bpw, with disk-backed native Engram tables",
+      "checked_on": "2026-10-02",
+      "sources": [
+        "https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-EXL3-2x-DGX-Sparks",
+        "https://github.com/coolbho3k/DeepSeek-v4.1-Flash-2x-DGX-Spark"
+      ],
+      "notes": "User-approved ≤S$25k two-Spark override based on community local-serving recipes using approximately 2.9–3-bit quantization and disk-backed Engram tables. Exception to the default 4-bit/all-resident fallback. Total parameter count remains 748B; saved full-resident memory research is preserved separately and does not describe this configuration. One 108K-token session is budgeted in this chart tier. Recipe performance and quality are reported by the authors, not independently reproduced; the original AAII score is not verified for this quantized deployment. Cost is an indicative SGD band, not a vendor quote."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "canonical_id": "qwen/qwen3-30b-a3b-thinking-2507",
+  "status": "estimated",
+  "total_params_b": 30,
+  "weights_gib": 14.0,
+  "required_memory_gib": 33.5,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507"
+  ],
+  "notes": "Official Qwen checkpoint family: 30B total/3B active. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

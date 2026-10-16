@@ -1,0 +1,15 @@
+{
+  "canonical_id": "z-ai/glm-5.3-flash",
+  "status": "estimated",
+  "total_params_b": 320,
+  "weights_gib": 176.0,
+  "required_memory_gib": 224,
+  "quantization": "~4-bit weights (ideal packed payload; mixed formats/checkpoint evidence where noted)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/zai-org/GLM-5.3-Flash",
+    "https://github.com/Entrpi/glm-5.3-flash-exl3-2x-spark"
+  ],
+  "notes": "Official model card identifies 320B total / 18B active parameters. First-hand 4-bit EXL3 deployment reports ~176 GiB checkpoint on two DGX Spark units and serves well above 108K context. Required memory is estimated as 176 GiB checkpoint + 48 GiB for a single 108K-session KV, runtime and OS = 224 GiB; deployment reports demonstrate related serving but not this exact minimum.",
+  "checked_on": "2026-10-02"
+}

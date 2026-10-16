@@ -1,0 +1,14 @@
+{
+  "canonical_id": "meta-llama/llama-3.3-70b-instruct",
+  "status": "estimated",
+  "total_params_b": 70.0,
+  "weights_gib": 32.6,
+  "required_memory_gib": 69.6,
+  "quantization": "4-bit weight estimate (ideal 4-bit)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
+  ],
+  "notes": "Meta exact-version card reports 70B parameters, GQA, and 128K context. Weight estimate uses full 70B \u00d7 0.5 bytes; adds 37 GiB estimated FP16 KV cache for 108K plus runtime/OS reserve. KV value uses the published GQA architecture and is approximate.",
+  "checked_on": "2026-10-02"
+}

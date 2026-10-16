@@ -1,0 +1,14 @@
+{
+  "canonical_id": "inclusionai/ling-3.0-flash-vl",
+  "status": "estimated",
+  "total_params_b": 124,
+  "weights_gib": 57.7,
+  "required_memory_gib": 88.2,
+  "quantization": "Estimated 4-bit weight-only; ideal size uses params × 0.5 bytes, with no pruning or disk streaming.",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
+  ],
+  "notes": "Official VL card gives 124B total / 5.5B active; its separate visual encoder is included in reported total. Memory is a planning estimate: required_memory_gib adds 20–25% for quantization metadata/runtime plus 16–48 GiB for one 108K session KV cache, OS and safety headroom; no qualifying single-node end-to-end measurement was found.",
+  "checked_on": "2026-10-02"
+}

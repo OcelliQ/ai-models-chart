@@ -1,0 +1,14 @@
+{
+  "canonical_id": "google/gemma-4-31b-it",
+  "status": "estimated",
+  "total_params_b": 30.7,
+  "weights_gib": 14.3,
+  "required_memory_gib": 22.3,
+  "quantization": "4-bit weight estimate (ideal 4-bit; full unpruned dense model)",
+  "context_tokens": 108000,
+  "sources": [
+    "https://huggingface.co/google/gemma-4-31B-it"
+  ],
+  "notes": "Google exact-version card reports 30.7B parameters, 60 layers, 256K context and hybrid local/global attention. Weight estimate is 30.7B \u00d7 0.5 bytes; reserve 8 GiB for 108K hybrid KV cache, runtime, and OS. Total params, rather than any effective count, set weight residency.",
+  "checked_on": "2026-10-02"
+}
