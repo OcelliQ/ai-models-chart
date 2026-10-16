@@ -2,10 +2,10 @@
   "catalog_source": "https://openrouter.ai/api/v1/models",
   "rankings_source": "https://openrouter.ai/api/v1/datasets/rankings-daily",
   "rankings_meta": {
-    "as_of": "2026-10-06T13:02:36.001Z",
+    "as_of": "2026-10-16T16:10:56.603Z",
     "version": "v1",
     "start_date": "2026-01-01",
-    "end_date": "2026-10-05"
+    "end_date": "2026-10-15"
   },
   "month_snapshot_used_for_volume": false,
   "month_snapshot_meta": null,
@@ -22,17 +22,21 @@
   },
   "volume_method": "avg_monthly_tokens = round(sum of observed daily total_tokens / (distinct days in the rankings window / (365.2425/12))). Each day contributes only its top 50 model_permaslug rows; the aggregated other row is not expanded. Days a family misses the top 50 are censored, not filled with zeros, so the average is a lower bound.",
   "volume": {
-    "ranking_rows": 14178,
-    "other_rows": 278,
+    "ranking_rows": 14688,
+    "other_rows": 288,
     "skipped_stealth": 113,
     "skipped_non_llm": 0,
-    "skipped_unpriced_or_unmatched": 1684,
+    "skipped_unpriced_or_unmatched": 1853,
     "window_start": "2026-01-01",
-    "window_end": "2026-10-05",
-    "window_days": 278,
-    "month_equivalents": 9.133657775313662,
-    "priced_families": 170,
+    "window_end": "2026-10-15",
+    "window_days": 288,
+    "month_equivalents": 9.462206616152283,
+    "priced_families": 171,
     "unmatched_top": [
+      {
+        "model_permaslug": "typesafe/jev-1.13-20260917",
+        "observed_tokens": 11448399635936
+      },
       {
         "model_permaslug": "xiaomi/mimo-v2-pro-20260318",
         "observed_tokens": 10749755057141
@@ -42,16 +46,20 @@
         "observed_tokens": 9931981442798
       },
       {
-        "model_permaslug": "typesafe/jev-1.13-20260917",
-        "observed_tokens": 6658271672645
-      },
-      {
         "model_permaslug": "poolside/laguna-m.1-20260312:free",
         "observed_tokens": 5656432571601
       },
       {
+        "model_permaslug": "inclusionai/ling-3.0-flash-fin-20260827:free",
+        "observed_tokens": 4395839289028
+      },
+      {
         "model_permaslug": "arcee-ai/trinity-large-preview:free",
         "observed_tokens": 3741709025402
+      },
+      {
+        "model_permaslug": "dots-studio/dots-3-note-preview-20260813:free",
+        "observed_tokens": 3485359034145
       },
       {
         "model_permaslug": "google/gemini-2.0-flash-001",
@@ -60,10 +68,6 @@
       {
         "model_permaslug": "x-ai/grok-code-fast-1",
         "observed_tokens": 2681579313034
-      },
-      {
-        "model_permaslug": "dots-studio/dots-3-note-preview-20260813:free",
-        "observed_tokens": 2375547527795
       },
       {
         "model_permaslug": "xiaomi/mimo-v2-flash-20251210",
@@ -95,7 +99,7 @@
       },
       {
         "model_permaslug": "inclusionai/ling-3.0-flash-sante-20260904:free",
-        "observed_tokens": 1184429578719
+        "observed_tokens": 1410563696213
       },
       {
         "model_permaslug": "xiaomi/mimo-v2-omni-20260318",
@@ -108,30 +112,26 @@
       {
         "model_permaslug": "openai/text-embedding-3-small",
         "observed_tokens": 1042363080213
-      },
-      {
-        "model_permaslug": "inclusionai/ling-2.6-1t-20260423:free",
-        "observed_tokens": 998499556989
       }
     ]
   },
   "selection": {
-    "ranked": 169,
+    "ranked": 166,
     "retained": 14,
     "benchmark_cohort": 0,
-    "pinned_only": 1,
+    "pinned_only": 0,
     "pinned_marked": 14,
     "stale": [],
     "price_overrides": [
       "qwen/qwen3.8-27b"
     ],
     "cohort_ids": [],
-    "rows": 184,
+    "rows": 180,
     "top_requested": 200,
-    "ranked_shortfall": 31
+    "ranked_shortfall": 34
   },
-  "limitation": "Refresh restricted to 184 existing models. 169 have observed usage in the censored daily top-50 feed. Unobserved models retain prior volumes or nominal placeholders; missing daily ranks are not measured zero usage. No new models were added.",
+  "limitation": "Refresh restricted to 180 existing models. 166 have observed usage in the censored daily top-50 feed. Unobserved models retain prior volumes or nominal placeholders; missing daily ranks are not measured zero usage. No new models were added.",
   "existing_models_only": true,
-  "retrieved_at": "2026-10-06T13:02:37.820601+00:00",
+  "retrieved_at": "2026-10-16T16:10:57.054754+00:00",
   "curated_scores_preserved": true
 }
