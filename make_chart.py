@@ -190,7 +190,7 @@ LABEL_PLACEMENTS = {
     "moonshotai/kimi-k3": ((-36, 0), "right"),
     "z-ai/glm-5.3": ((0, -22), "center"),
     "openai/gpt-6-astra": ((6, 10), "left"),
-    "anthropic/claude-fable-5.1": ((18, -12), "left"),
+    "anthropic/claude-fable-5.1": ((-14, 10), "right"),
     "meta/muse-spark-1.3": ((-6, 5), "right"),
 }
 
