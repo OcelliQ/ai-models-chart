@@ -5,7 +5,7 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   export:
@@ -23,3 +23,21 @@ jobs:
           name: charts
           path: dist/
           if-no-files-found: error
+      # Publish dist/ as charts.zip on the rolling `charts` tag, so other repos
+      # can fetch the latest charts without auth:
+      # https://github.com/OcelliQ/ai-models-chart/releases/download/charts/charts.zip
+      - name: Publish rolling charts download
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          (cd dist && zip -qr ../charts.zip .)
+          git tag -f charts
+          git push -f origin refs/tags/charts
+          notes="Charts built from ${GITHUB_SHA::7} on $(date -u +%Y-%m-%d)."
+          if gh release view charts >/dev/null 2>&1; then
+            gh release edit charts --notes "$notes"
+          else
+            gh release create charts --title "Charts" --notes "$notes"
+          fi
+          gh release upload charts charts.zip --clobber

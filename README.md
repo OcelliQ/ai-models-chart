@@ -13,7 +13,7 @@ Unannotated charts of API price against the Artificial Analysis Intelligence Ind
 
 The stems are `cost-vs-aaii` (open weights vs closed), `cost-vs-aaii-by-lab` (OpenAI, Google, Anthropic, SpaceXAI), `cost-vs-aaii-by-lab-open` (DeepSeek, Z.ai, MiniMax, Alibaba), `cost-vs-aaii-by-age`, and `cost-vs-aaii-by-hardware`.
 
-GitHub Actions renders these from the committed tables on every push and pull request and uploads `dist/` as the `charts` artifact. The workflow does not call OpenRouter. To refresh prices and volumes locally, run `python3 refresh_all.py --env-file .env`. That command reads only `OPENROUTER_API_KEY`.
+GitHub Actions renders these from the committed tables on every push and pull request and uploads `dist/` as the `charts` artifact. Each push to `master` also publishes `dist/` as `charts.zip` on the rolling [`charts` release](https://github.com/OcelliQ/ai-models-chart/releases/tag/charts), which needs no login to download. The workflow does not call OpenRouter. To refresh prices and volumes locally, run `python3 refresh_all.py --env-file .env`. That command reads only `OPENROUTER_API_KEY`.
 
 Age colors use `rankings_meta.end_date` in `refresh_meta.json`, so a rebuild on a later day does not shift the age chart.
 
